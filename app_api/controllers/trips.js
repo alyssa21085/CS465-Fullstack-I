@@ -101,7 +101,8 @@ resort: req.body.resort,
 perPerson: req.body.perPerson,
 image: req.body.image,
 description: req.body.description
-}
+},
+{ new: true }
 )
 .exec();
 if(!q)
